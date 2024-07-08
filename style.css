@@ -13,3 +13,20 @@
     --very-dark-gray-blue: hsl(237, 17%, 21%);
     --very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input, button {
+    font: inherit;
+}
