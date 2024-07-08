@@ -22,6 +22,19 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: overpassSemiBold;
+}
+
+a {
+    text-decoration: none;
+}
+
 img {
     display: block;
     max-width: 100%;
