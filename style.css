@@ -8,8 +8,8 @@
     --grayish-blue: hsl(240, 2%, 79%);
     --very-dark-grayish-blue: hsl(207, 13%, 34%);
     --very-dark-black-blue: hsl(240, 10%, 16%);
-    --very-light-red: hsl(13, 100%, 72%);
-    --light-red: hsl(353, 100%, 62%);
+    --gradient-very-light-red: hsl(13, 100%, 72%);
+    --gradient-light-red: hsl(353, 100%, 62%);
     --very-dark-gray-blue: hsl(237, 17%, 21%);
     --very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
@@ -23,13 +23,11 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
     line-height: 1.5;
     font-family: overpassSemiBold;
+    text-align: center;
 }
+
 
 a {
     text-decoration: none;
@@ -40,6 +38,22 @@ img {
     max-width: 100%;
 }
 
+ul {
+    list-style-type: none;
+}
+
 input, button {
     font: inherit;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/bg-pattern-intro-mobile.svg);
+    background-color: var(--gradient-light-red);
+    background-position: center center;
+    background-repeat: no-repeat;
+    gap: 2rem;
+    padding-bottom: 10em;
+}
+
