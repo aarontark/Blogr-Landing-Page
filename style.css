@@ -46,7 +46,7 @@ input, button {
     font: inherit;
 }
 
-header {
+.header {
     display: flex;
     flex-direction: column;
     background-image: url(./images/bg-pattern-intro-mobile.svg);
@@ -55,5 +55,18 @@ header {
     background-repeat: no-repeat;
     gap: 2rem;
     padding-bottom: 10em;
+    color: var(--white);
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: min(25vw, 5rem);
+}
+
+.nav-menu {
+    display: none;
+}
