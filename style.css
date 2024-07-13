@@ -141,13 +141,14 @@ input, button {
 .editor {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 3.25rem;
     overflow: hidden;
+    padding: 6.25em 0 5em;
 }
 
 .editor__title {
-    padding: 3.5em 0 0em;
     color: var(--very-dark-blue);
     font-size: 1.75rem;
     letter-spacing: -.05rem;
@@ -156,4 +157,24 @@ input, button {
 .editor__img {
     width: 107.5%;
     max-width: 107.5%;
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    gap: 1.12rem;
+    padding: 0 2em;
+}
+
+.blurb__title {
+    color: var(--very-dark-blue);
+    font-size: 1.75rem;
+    line-height: 2rem;
+}
+
+.blurb__para {
+    color: var(--very-dark-grayish-blue);
+    font-family: overpassLight;
+    font-size: 1.05rem;
+    line-height: 1.75rem;
 }
