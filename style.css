@@ -135,4 +135,12 @@ input, button {
     background: var(--white);
     color: var(--light-red);
     font-family: ubuntuMedium;
+    outline: none;
+}
+
+.editor__title {
+    padding: 3.5em 0 2em;
+    color: var(--very-dark-blue);
+    font-size: 1.75rem;
+    letter-spacing: -.05rem;
 }
