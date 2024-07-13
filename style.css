@@ -99,6 +99,7 @@ input, button {
     gap: 1rem;
     text-align: center;
     padding-top: 2em;
+
 }
 
 .header__btn {
@@ -109,6 +110,7 @@ input, button {
     border: none;
     font-weight: bold;
     cursor: pointer;
+    letter-spacing: .025rem;
 }
 
 .btn--start {
@@ -119,4 +121,17 @@ input, button {
 .btn--start:hover {
     background: var(--very-light-red);
     color: var(--white);
+}
+
+.btn--learn {
+    background: rgba(255, 255, 255, 0);
+    outline: 2px solid rgba(255, 255, 255, 0.589);
+    color: var(--white);
+    font-family: ubuntuRegular;
+}
+
+.btn--learn:hover {
+    background: var(--white);
+    color: var(--light-red);
+    font-family: ubuntuMedium;
 }
