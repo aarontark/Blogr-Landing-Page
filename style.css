@@ -8,9 +8,8 @@
     --grayish-blue: hsl(240, 2%, 79%);
     --very-dark-grayish-blue: hsl(207, 13%, 34%);
     --very-dark-black-blue: hsl(240, 10%, 16%);
-    --header-gradient: linear-gradient(135deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 35%);
-    --very-dark-gray-blue: hsl(237, 17%, 21%);
-    --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    --very-dark-gray-blue: #2c2d3f;
+    --very-dark-desaturated-blue: #3f4164;
 }
 
 *,
@@ -24,8 +23,8 @@
 body {
     font-family: overpassSemiBold;
     text-align: center;
+    min-height: 100%;
 }
-
 
 a {
     text-decoration: none;
@@ -145,7 +144,8 @@ input, button {
     align-items: center;
     gap: 3.25rem;
     overflow: hidden;
-    padding: 6.25em 0 5em;
+    padding: 6.25em 0 16.5em;
+    z-index: 2;
 }
 
 .editor__title {
@@ -177,4 +177,50 @@ input, button {
     font-family: overpassLight;
     font-size: 1.05rem;
     line-height: 1.75rem;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right bottom, #2c2d3f, #313248, #353751, #3a3c5b, #3f4164);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15em 0 6em;
+    z-index: 1;
+}
+
+.phone-background-wrapper {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+}
+
+.phone-background {
+    position: relative;
+    top: -150px;
+    width: 150%;
+    max-width: 150%;
+}
+
+.phone-img {
+    position: absolute;
+    top: -185px;
+    max-width: 23.44rem;
+}
+
+.phone__title {
+    color: var(--white);
+    font-size: 2.25rem;
+    line-height: 3rem;
+}
+
+.phone__para {
+    color: var(--white);
+    opacity: .75;
 }
