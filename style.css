@@ -138,8 +138,14 @@ input, button {
     outline: none;
 }
 
+.editor {
+    display: flex;
+    flex-direction: column; 
+    gap: 3.5rem;
+}
+
 .editor__title {
-    padding: 3.5em 0 2em;
+    padding: 3.5em 0 0em;
     color: var(--very-dark-blue);
     font-size: 1.75rem;
     letter-spacing: -.05rem;
