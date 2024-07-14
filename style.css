@@ -232,7 +232,7 @@ input, button {
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    padding: 3.75em 0;
+    padding: 3.75em 0 6em;
     overflow: hidden;
 }
 
@@ -247,23 +247,51 @@ input, button {
     align-items: center;
     background-color: var(--very-dark-black-blue);
     color: var(--white);
-    padding: 4em 0;
+    padding: 4em 0 5em;
     position: relative;
+    gap: 3rem;
+    font-size: 1.15rem;
+    border-top-right-radius: 6rem;
 }
 
 .footer__img {
-    width: min(100%, 7rem);
-    padding-bottom: 3em;
+    width: min(100%, 6.5rem);
+    padding-bottom: 1.75em;
 }
 
 .footer__section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.75rem;
 }
+
+.footer__section-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grayish-blue);
+    gap: .75rem;
+    font-family: overpassLight;
+}
+
+.footer__section-list a {
+    color: var(--grayish-blue);
+}
+
+.footer__section-list a:hover, .footer__section-list a:active {
+    text-decoration: underline var(--grayish-blue);
+}
+
 
 .attribution {
     position: absolute;
     bottom: 0;
-    color: #fff;
+    color: hsl(240, 7%, 94%);
+    font-size: 1rem;
+    padding-inline: 2em;
+}
+
+.credit__tag {
+    display: block;
 }
