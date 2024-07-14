@@ -240,3 +240,30 @@ input, button {
     width: 130.5%;
     max-width: 130.5%;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--very-dark-black-blue);
+    color: var(--white);
+    padding: 4em 0;
+    position: relative;
+}
+
+.footer__img {
+    width: min(100%, 7rem);
+    padding-bottom: 3em;
+}
+
+.footer__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
