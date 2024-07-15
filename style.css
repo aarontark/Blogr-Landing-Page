@@ -89,7 +89,7 @@ input, button {
 
 .header__paragraph {
     font-size: 1.12rem;
-    opacity: .75
+    opacity: .9
 }
 
 .header__buttons {
@@ -189,6 +189,7 @@ input, button {
     padding: 15em 0 6em;
     z-index: 1;
     border-radius: 0 8rem;
+    height: auto;
 }
 
 .phone-background-wrapper {
@@ -200,6 +201,8 @@ input, button {
     justify-content: center;
     align-items: center;
     max-height: 100%;
+    height: 100%;
+    border-radius: inherit;
 }
 
 .phone-background {
