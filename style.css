@@ -8,8 +8,6 @@
     --grayish-blue: hsl(240, 2%, 79%);
     --very-dark-grayish-blue: hsl(207, 13%, 34%);
     --very-dark-black-blue: hsl(240, 10%, 16%);
-    --very-dark-gray-blue: #2c2d3f;
-    --very-dark-desaturated-blue: #3f4164;
 }
 
 *,
@@ -46,7 +44,7 @@ input, button {
 .header {
     display: flex;
     flex-direction: column;
-    background: url(./images/bg-pattern-intro-mobile.svg) no-repeat, linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background: url(./images/bg-pattern-intro-mobile.svg) no-repeat, linear-gradient(135deg, #ff8f70, #ff3d54);
     background-position: 35% 35%;
     padding-bottom: 10em;
     color: var(--white);
@@ -58,6 +56,7 @@ input, button {
     justify-content: space-between;
     align-items: center;
     padding: 3.25em 1.5em 0;
+    position: relative;
 }
 
 .logo {
@@ -71,6 +70,86 @@ input, button {
 
 .nav-menu {
     display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-inline: auto;
+    top: 120px;
+    background: var(--white);
+    width: min(80%, 40rem);
+    z-index: 3;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: .5rem;
+    padding: 1.75em 1.25em;
+}
+
+.nav-menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-menu__dropdown {
+    color: var(--very-dark-blue);
+    font-size: 1.125rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-menu__dropdown::after {
+    content: url(./images/icon-arrow-dark.svg);
+    vertical-align: middle;
+    position: relative;
+    left: 8px;
+}
+
+.nav-menu__items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-block: -1rem;
+    gap: 1rem;
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    padding-block: 1em;
+    border-radius: .25rem;
+}
+
+.nav-menu__item {
+    color: var(--very-dark-grayish-blue)
+}
+
+.nav-menu__line {
+    opacity: .25;
+}
+
+.nav-menu__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.login-btn {
+    font-size: 1.12rem;
+    color: var(--very-dark-blue);
+}
+
+.signup-btn {
+    background: rgb(255,143,112);
+    background: linear-gradient(135deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 90%);
+    color: var(--white);
+    border: none;
+    padding: 1.4em 2em;
+    border-radius: 2rem;
+    line-height: 0px;
+    font-family: ubuntuRegular;
+    font-weight: bold;
+    letter-spacing: .05rem;
 }
 
 .header-content {
