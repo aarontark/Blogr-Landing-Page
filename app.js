@@ -1,5 +1,11 @@
 const hamburgerIcon = document.querySelector('.hamburger-icon');
 const navMenu = document.querySelector('.nav-menu');
+const navMenuDropdown = document.querySelectorAll('.nav-menu__dropdown');
+const navMenuItems = document.querySelectorAll('.nav-menu__items');
+
+navMenuItems.forEach((e) => {
+    e.style.display = 'none';
+})
 
 hamburgerIcon.addEventListener('click', () => {
     if(hamburgerIcon.classList.contains('hamburger-icon')){
@@ -12,5 +18,20 @@ hamburgerIcon.addEventListener('click', () => {
         hamburgerIcon.classList.remove('close-icon');
         hamburgerIcon.src = './images/icon-hamburger.svg';
         navMenu.style.display = 'none';
+        navMenuItems.forEach((e) => {
+            e.style.display = 'none';
+        })
     }
 })
+
+navMenuDropdown.forEach((e) => {
+    e.addEventListener('click', () => {
+        if (e.nextElementSibling.style.display === 'none') {
+            e.classList.add('uparrow');
+            e.nextElementSibling.style.display = 'flex';
+        } else if (e.nextElementSibling.style.display === 'flex') {
+            e.classList.remove('uparrow');
+            e.nextElementSibling.style.display = 'none';
+        }
+    })
+});
