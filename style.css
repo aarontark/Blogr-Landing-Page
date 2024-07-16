@@ -64,8 +64,12 @@ input, button {
 }
 
 .hamburger-icon {
+    width: 2.25rem;
+}
+
+.close-icon {
     width: 2rem;
-    height: 1.275rem;
+    height: auto;
 }
 
 .nav-menu {
