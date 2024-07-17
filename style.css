@@ -234,7 +234,7 @@ input, button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3.75rem;
+    gap: 4rem;
     overflow: hidden;
     padding: 6.25em 0 16.5em;
     z-index: 2;
@@ -254,7 +254,7 @@ input, button {
 .blurb {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
     padding: 0 3em;
 }
 
@@ -330,8 +330,8 @@ input, button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    padding: 3.75em 0 6em;
+    gap: 4rem;
+    padding: 3.75em 0 7em;
     overflow: hidden;
 }
 
