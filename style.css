@@ -200,19 +200,19 @@ input, button {
     gap: 1rem;
     text-align: center;
     padding-top: 2em;
-
 }
 
 .header__btn {
     font-family: ubuntuMedium;
     flex: 1 1 0;
-    padding: .95em .25em;
+    padding: .95em .5em;
     border-radius: 2rem;
     border: none;
     font-weight: bold;
     cursor: pointer;
     letter-spacing: .025rem;
-    max-width: 8.5rem;
+    max-width: 10rem;
+    font-size: clamp(1rem, 2.25vw, 1.125rem);
 }
 
 .btn--start {
