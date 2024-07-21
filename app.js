@@ -7,6 +7,9 @@ navMenuItems.forEach((e) => {
     e.style.display = 'none';
 })
 
+alert(window.innerHeight);
+alert(window.innerWidth);
+
 hamburgerIcon.addEventListener('click', () => {
     if(hamburgerIcon.classList.contains('hamburger-icon')){
         hamburgerIcon.classList.remove('hamburger-icon');
